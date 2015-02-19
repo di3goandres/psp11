@@ -46,4 +46,9 @@ public class RangoTamanoRelativo {
     public double getVeryLarge() {
         return veryLarge;
     }
+    
+    
+    
+    
+    
 }

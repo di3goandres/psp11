@@ -24,7 +24,7 @@ public class GestorNegocio {
     public RangoTamanoRelativo GestorNegocio(List<Double> datosCalculos) {
 
         CalculoTamanoRelativo calculoTamanio = new CalculoTamanoRelativo();
-        RangoTamanoRelativo datoretorno = calculoTamanio.obtenerRangoTamañoRelativo(datosCalculos);
+        RangoTamanoRelativo datoretorno = calculoTamanio.obtenerRangoTamanioRelativo(datosCalculos);
         return datoretorno;
 
     }

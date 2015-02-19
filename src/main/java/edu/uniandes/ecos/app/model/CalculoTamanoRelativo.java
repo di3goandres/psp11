@@ -18,11 +18,7 @@ public class CalculoTamanoRelativo {
 
     private List<Double> numerosLN = new LinkedList<Double>();
 
-    public CalculoTamanoRelativo() {
-
-    }
-
-    public RangoTamanoRelativo obtenerRangoTamañoRelativo(
+    public RangoTamanoRelativo obtenerRangoTamanioRelativo(
             List<Double> listaNumeros) {
 
         DesviacionEstandar desv = new DesviacionEstandar();
