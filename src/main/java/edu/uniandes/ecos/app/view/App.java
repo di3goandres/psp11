@@ -16,10 +16,6 @@ import javax.servlet.http.*;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.*;
 
-/**
- * Hello world!
- *
- */
 public class App extends HttpServlet {
 
     @Override

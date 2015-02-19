@@ -26,32 +26,21 @@ public class CalculoTamanoRelativo {
         desv.DesviacionEstandarAdd(numerosLN);
         double valorPromedio = desv.MediaAritmetica();
         double desviacionEstandar = (desv.DesviacionStandard());
-    
-        
-        double VS = Math.exp(valorPromedio - (2 * desviacionEstandar));
-
-        double S = Math.exp(valorPromedio - (desviacionEstandar));
-        double M = Math.exp(valorPromedio);
-
-        double L = Math.exp(valorPromedio + (desviacionEstandar));
-
-        double VL = Math.exp(valorPromedio + (2 * desviacionEstandar));
-
-        return new RangoTamanoRelativo(VS, S, M, L, VL);
+        double verySmall = Math.exp(valorPromedio - (2 * desviacionEstandar));
+        double small = Math.exp(valorPromedio - (desviacionEstandar));
+        double medium = Math.exp(valorPromedio);
+        double large = Math.exp(valorPromedio + (desviacionEstandar));
+        double verylarge = Math.exp(valorPromedio + (2 * desviacionEstandar));
+        return new RangoTamanoRelativo(verySmall, small, medium, large, verylarge);
 
     }
 
     public List<Double> ConvertirALN(List<Double> numerosP) {
-
-        
-        
         Double log = 0D;
         for (Double num : numerosP) {
-
             log = Math.log(num);
             numerosLN.add(log);
         }
-        
         return numerosLN;
 
     }

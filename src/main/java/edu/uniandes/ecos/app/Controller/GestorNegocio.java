@@ -26,7 +26,6 @@ public class GestorNegocio {
         CalculoTamanoRelativo calculoTamanio = new CalculoTamanoRelativo();
         RangoTamanoRelativo datoretorno = calculoTamanio.obtenerRangoTamanioRelativo(datosCalculos);
         return datoretorno;
-
     }
 
     public static void showHome(HttpServletRequest req, HttpServletResponse resp)
@@ -53,7 +52,6 @@ public class GestorNegocio {
     public static void showResults(HttpServletRequest req, HttpServletResponse resp,
             RangoTamanoRelativo resultado)
             throws ServletException, IOException {
-
         resp.getWriter().println("<h2>Resultados</h2>");
         resp.getWriter().println("VS: " + resultado.getVerySmall() + "<br>");
         resp.getWriter().println("S : " + resultado.getSmall() + "<br>");
