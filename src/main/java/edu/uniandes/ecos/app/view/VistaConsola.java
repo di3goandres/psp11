@@ -54,7 +54,7 @@ public class VistaConsola {
         desv.DesviacionEstandarAdd(numerosLN);
         double valorPromedio = desv.MediaAritmetica();
 
-        RangoTamanoRelativo dat = c.obtenerRangoTamañoRelativo(numeros);
+        RangoTamanoRelativo dat = c.obtenerRangoTamanioRelativo(numeros);
 
         System.out.println("VS:" + dat.getVerySmall());
         System.out.println("S:" + dat.getSmall());
